@@ -25,6 +25,9 @@ a {
   text-decoration: none;
   color: #fff;
 }
+li {
+  list-style: none;
+}
 button {
   background-color: transparent;
   outline: none;
@@ -417,6 +420,43 @@ footer i:hover {
   scale: 1.2;
 }
 
+/* -------------overlay---------- */
+.overlay-hide {
+  display: none;
+}
+.overlay {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+  background-color: var(--color-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-itemss {
+  height: 100%;
+  width: 100%;
+  margin-top: 4rem;
+}
+.nav-itemss ul {
+  margin-top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  flex-direction: column;
+  font-size: 2.5rem;
+  font-weight: 700;
+  gap: 1rem;
+}
+.nav-itemss ul li {
+  border-bottom: 1px solid white;
+  width: 70%;
+  text-align: center;
+}
+
 /* ============MEDIA QUERIES FOR TABLETS============== */
 
 @media screen and (max-width: 1024px) {
@@ -465,6 +505,11 @@ footer i:hover {
     justify-content: space-between;
     padding: 0 0.8rem;
     height: 4rem;
+    z-index: 20;
+  }
+  .nav button {
+    font-size: 2rem;
+    color: white;
   }
   .container {
     width: var(--container-width-sm);

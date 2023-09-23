@@ -14,3 +14,13 @@ faq.forEach((e) => {
     faqIconP.classList.toggle("faq-none");
   });
 });
+
+// -----overlay menu-----
+
+const btn = document.querySelector("[openMenu]");
+const btnI = document.querySelector(".fa-solid");
+const overlay = document.querySelector("[overlay]");
+btn.addEventListener("click", () => {
+  overlay.classList.toggle("overlay");
+  btnI.classList.toggle("fa-xmark");
+});
