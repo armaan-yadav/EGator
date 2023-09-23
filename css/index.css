@@ -382,8 +382,9 @@ body {
 }
 /* footer section */
 footer {
-  height: 20rem;
+  height: fit-content;
   background-color: var(--color-bg1);
+  padding-bottom: 2rem;
 }
 footer ul li,
 p {
@@ -448,7 +449,7 @@ footer i:hover {
   text-transform: uppercase;
   flex-direction: column;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 400;
   gap: 1rem;
 }
 .nav-itemss ul li {
